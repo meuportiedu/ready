@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Inter:wght@400;900&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: #10101a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% auto;
+    height: 100vh;
+}
+
+.animation {
+    margin-top: 20px;
+    width: 25vw;
+    cursor: pointer;
+    transition: transform 1.0s;
+    animation: fromBottom 1.0s backwards;
+}
+
+.main{
+    color: #ffffff;
+    text-align: center;
+}
+
+.text h1{
+    padding: 5px;
+    transition: transform .9s;
+}
+
+.text{
+    padding: 15px;
+    animation: fromBottom 2.0s backwards;
+}
+
+.btn{ 
+    background-color: #322c8e;
+    width: 8%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 8px rgb(191, 191, 191);
+    cursor: pointer;
+    transition: transform .8s;
+    animation: fromBottom 3.0s backwards;
+}
+
+.btn a{
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* ANIMATIONS */
+.btn:hover {
+    background-color: rgb(191, 191, 191);
+    color: #322c8e;
+    box-shadow: 4px 4px 8px #322c8e;
+    transform: scale(1.1);
+    transition: 1.0s;
+}
+
+.btn:hover a{
+    color: #322c8e;
+    font-weight: 700;
+}
+
+/* ANIMATIONS - LAG */
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+/* RESPONSIVIDADE - Celular tela */
+@media screen and (max-width: 800px) {
+    .text {
+        padding-top: 2px;
+    }
+
+    .text h3 {
+        font-size: 35px;
+        margin-top: 1%;
+    }
+
+    .text h1 {
+        font-size:30px;
+        margin-top: 5%;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    
+    .text{
+        padding-top: 100px;
+    }
+
+    .animation {
+        padding-top: 30px;
+        width: 40vw;
+    }
+
+    .btn {
+        background-color: #322c8e;
+        width: 50%;
+        padding: 16px 0px;
+        margin: 20px;
+        border: none;
+        border-radius: 20px 0px 20px 0px;
+    }
+    .btn a {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .text h3 {
+        font-size: 31px;
+        margin-top: 1px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+        margin-top: 10%;
+    }
+    .text p{
+        font-size: 13px;
+    }
+    
+    .text{
+        padding-top: 70px;
+    }
+
+    .animation {
+        padding-top: 10px;
+        width: 50vw;
+    }
+
+    .btn {
+        background-color: #322c8e;
+        width: 30%;
+        padding: 16px 0px;
+        margin: 20px;
+        margin-bottom: 40px;
+        border: none;
+        border-radius: 20px 0px 20px 0px;
+    }
+    .btn a {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text h3 {
+        font-size: 25px;
+        margin-top: 2px;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        margin-top: 10%;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .text {
+        padding-top: 10px;
+    }
+
+    .animation {
+        padding-top: 10px;
+        width: 30vw;
+    }
+
+    .btn {
+        background-color: #322c8e;
+        width: 30%;
+        padding: 16px 0px;
+        margin: 16px;
+        border: none;
+        border-radius: 20px 0px 20px 0px;
+    }
+}
